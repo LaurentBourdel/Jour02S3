@@ -23,16 +23,12 @@ while my_game.human_player.life_points >0 && my_game.enemies.count != 0
 	my_game.menu
 	print "> "
 	user_choice = gets.chomp.to_s
-	#my_game.show_players
-	#my_game.menu
 	my_game.menu_choice(user_choice)
 	my_game.enemies_attack
 	my_game.is_still_ongoing?
 	my_game.kill_player 
-	puts "#{my_game.enemies.count}"
 end
 
 puts "-----------------------------------------------------"
 my_game.end
-	
 puts "-----------------------------------------------------"
